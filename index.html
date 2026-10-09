@@ -1,1 +1,165 @@
-This is Zahir Raihan
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zahir Raihan – DevOps Engineer</title>
+<meta name="description" content="DevOps Engineer who builds reliable delivery pipelines and cloud infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E9EEF2; --panel:#F7F9FA; --ink:#14202E; --muted:#4B5A6B;
+  --line:#C3CED8; --signal:#1F5EFF; --ok:#17855A;
+  --display:"Bricolage Grotesque","Segoe UI",Helvetica,Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+header.top strong{font:700 1.1rem var(--display)}
+nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+
+.hero{padding:4rem 0 3rem}
+.hero h1{font:700 clamp(3rem,10vw,7.5rem)/.95 var(--display);letter-spacing:-.03em;margin:0 0 1.25rem}
+.hero .role{font:500 clamp(1.25rem,3vw,1.75rem) var(--display);margin:0 0 1rem}
+.hero p.lede{max-width:38rem;color:var(--muted);margin:0 0 2rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.4rem;text-decoration:none;font-weight:500;border:2px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--signal);border-color:var(--signal)}
+.btn.ghost:hover{background:var(--panel)}
+
+/* Pipeline: the one memorable element */
+.pipeline{list-style:none;margin:3.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);border:2px solid var(--ink);border-radius:.5rem;background:var(--panel);overflow:hidden}
+.pipeline li{padding:1rem 1.1rem;border-right:1px solid var(--line);position:relative}
+.pipeline li:last-child{border-right:0}
+.pipeline b{display:block;font:700 1.05rem var(--display)}
+.pipeline span{display:block;font-size:.88rem;color:var(--muted);line-height:1.4;margin-top:.15rem}
+.pipeline i{position:absolute;left:0;bottom:0;height:5px;width:100%;background:var(--ok);transform:scaleX(0);transform-origin:left;animation:fill .5s ease-out forwards;animation-delay:calc(var(--n)*.45s + .3s)}
+@keyframes fill{to{transform:scaleX(1)}}
+
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.75rem,4vw,2.5rem)/1.1 var(--display);letter-spacing:-.02em;margin:0 0 1.75rem}
+h3{font:700 1.15rem var(--display);margin:0 0 .35rem}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:2rem}
+.skills ul{margin:0;padding:0;list-style:none;color:var(--muted)}
+.skills li{padding:.2rem 0}
+
+.job{display:grid;grid-template-columns:11rem 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{color:var(--muted);font-size:.95rem}
+.job ul{margin:.5rem 0 0;padding-left:1.1rem}
+.job li{margin:.3rem 0}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.25rem}
+.project{background:var(--panel);border:1px solid var(--line);border-radius:.5rem;padding:1.5rem}
+.project p{margin:.4rem 0 0;color:var(--muted)}
+.project .stack{margin-top:.9rem;font-size:.9rem;color:var(--ink)}
+
+.contact p{max-width:34rem;color:var(--muted);margin:0 0 1.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+
+@media (max-width:760px){
+  .pipeline{grid-template-columns:1fr}
+  .pipeline li{border-right:0;border-bottom:1px solid var(--line)}
+  .pipeline li:last-child{border-bottom:0}
+  .job{grid-template-columns:1fr;gap:.25rem}
+  nav a{margin-left:1rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .pipeline i{animation:none;transform:scaleX(1)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong><h3>Zahir Raihan
+    <nav aria-label="Main">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Zahir Raihan</h1>
+      <p class="role">DevOps Engineer</p>
+      <p class="lede">I build the pipelines and cloud infrastructure that let teams ship often without breaking production. Open to full-time s starting soon.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="#experience">See my experience</a>
+      </div>
+
+      <ol class="pipeline" aria-label="What I cover across the delivery lifecycle">
+        <li style="--n:0"><b>Plan</b><span>Infrastructure as code with Terraform</span><i style="--n:0"></i></li>
+        <li style="--n:1"><b>Build</b><span>Container images and reproducible builds</span><i style="--n:1"></i></li>
+        <li style="--n:2"><b>Test</b><span>Automated checks in every pull request</span><i style="--n:2"></i></li>
+        <li style="--n:3"><b>Deploy</b><span>Kubernetes with safe, reversible releases</span><i style="--n:3"></i></li>
+        <li style="--n:4"><b>Observe</b><span>Metrics, logs, and alerts that matter</span><i style="--n:4"></i></li>
+      </ol>
+    </div>
+
+    <section id="skills">
+      <h2>What I work with</h2>
+      <div class="skills">
+        <div><h3>Cloud and infrastructure</h3><ul><li>AWS / Azure / GCP</li><li>Terraform</li><li>Kubernetes and Docker</li></ul></div>
+        <div><h3>Delivery</h3><ul><li>GitHub Actions / GitLab CI</li><li>Jenkins</li><li>Argo CD</li></ul></div>
+        <div><h3>Monitoring</h3><ul><li>Prometheus and Grafana</li><li>ELK / Loki</li><li>On-call and incident response</li></ul></div>
+        <div><h3>Scripting</h3><ul><li>Bash</li><li>Python</li><li>Linux administration</li></ul></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="when">2021-Present</div>
+        <div>
+          <h3>Devops Engineer and Cloud Infrastructure Engineer, Supernal Aero, a subsidary Company of Hyundai Motor Group]</h3>
+          <ul>
+            <li>[Cut deploy time from X minutes to Y by rebuilding the CI/CD pipeline.]</li>
+            <li>[Moved N services to Kubernetes with zero downtime.]</li>
+            <li>[Reduced cloud spend by X% through right-sizing and autoscaling.]</li>
+          </ul>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project"><h3>[Project name]</h3><p>[One sentence on the problem and what you built.]</p><div class="stack">Terraform, AWS, GitHub Actions</div></article>
+        <article class="project"><h3>[Project name]</h3><p>[One sentence on the problem and what you built.]</p><div class="stack">Kubernetes, Argo CD, Prometheus</div></article>
+        <article class="project"><h3>[Project name]</h3><p>[One sentence on the problem and what you built.]</p><div class="stack">Python, Docker, Grafana</div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's talk</h2>
+      <p>If you're hiring for a DevOps role, send me a note and I'll reply within a day.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:you@example.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/your-username">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Zahir Raihan </footer>
+</div>
+
+
+</body>
+</html>
